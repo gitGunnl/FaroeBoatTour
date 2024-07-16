@@ -298,6 +298,9 @@
   gap: 1rem;
   justify-content: center;
   padding-top: 4rem;
+  max-width: 1200px;
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
 }
 
 .trip h2 {
@@ -356,6 +359,9 @@
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         color: #001014; /* Light text color for contrast */
+        max-width: 700px;
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
       }
 
       .contact-form h2 {
@@ -393,6 +399,10 @@
         padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 5rem;
+        max-width: 700px;
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
       }
 
       .faq h2 {
