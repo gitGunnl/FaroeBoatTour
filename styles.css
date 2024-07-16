@@ -1,0 +1,445 @@
+/* Custom Styles */
+
+    :root {
+      /* Primary colors */
+      --primary: #003366; /* Deep blue */
+      --primary-hover: #002a55;
+      
+      /* Secondary colors */
+      --secondary: #2E8B57; /* Green */
+      --secondary-hover: #256a44;
+      
+      /* Accent colors */
+      --accent: #F5F5DC; /* Soft earth tone (beige) */
+      --accent-hover: #e4e4d3;
+      
+      /* Background colors */
+      --background: #FFFFFF; /* White background */
+      --background-secondary: #D2B48C; /* Soft earth tone (tan) */
+      
+      /* Text colors */
+      --text: #333333; /* Dark gray for text */
+      --text-secondary: #666666; /* Medium gray for secondary text */
+      
+      /* Border colors */
+      --border: #cccccc; /* Light gray for borders */
+      --border-hover: #999999;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  
+/* END Custom Styles */
+
+/* HEADER */
+      header {
+        display: grid; /* Use grid layout */
+        grid-template-columns: auto 1fr auto; /* Auto for logo, 1fr for title, auto for nav */
+        gap: 2rem; /* Add some spacing between logo, title, and nav */
+        align-items: center; /* Vertically align content */
+        padding: 1rem;
+      }
+
+      header img { /* Style the logo */
+        max-width: 80px; /* Adjust the maximum width as needed */
+        height: auto; /* Ensure it scales proportionally */
+      }
+
+      header h1 {
+        font-size: 3vw; /* Responsive font size */
+        margin: 0; /* Remove default margin */
+        color: #002a55;
+      }
+
+      nav {
+        display: flex;
+        justify-content: flex-end; /* Align navigation items to the right */
+        align-items: center; /* Center items vertically */
+      }
+
+      nav ul {
+        list-style: none; /* Remove default list style */
+        display: flex;
+        gap: 1rem; /* Add spacing between navigation items */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+      }
+
+      nav ul li {
+        display: inline; /* Ensure items are inline */
+      }
+
+      @media (max-width: 500px) {
+        header h1 {
+            display: none; /* Hide h1 on small screens */
+        }
+        header img {
+            max-width: 50px; /* Smaller logo on small screens */
+        }
+        nav ul {
+            gap: 0.5rem; /* Adjust spacing for small screens */
+        }
+      }
+/* END HEADER */
+
+/* HERO */
+  .hero {
+    background-image: url('images/hero-image-2.jpg');
+    background-size: cover;
+    background-position: bottom; /* Start the image from the bottom */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures background image goes to the edge */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 50vh;
+    max-height: 75vh;
+    margin-left: calc(50% - 50vw); /* Negative left margin to offset the container margin */
+    margin-right: calc(50% - 50vw); /* Negative right margin to offset the container margin */
+    width: 100vw; /* Full viewport width */
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better text readability */
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f5f5dc; /* Light beige for better contrast */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    color: #f5f5dc; /* Light beige for better contrast */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .hero .button.primary {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #2E8B57;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .hero .button.primary:hover {
+    background-color: #276a44;
+  }
+
+  /* Mobile-first adjustments */
+  @media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .button.primary {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+  }
+
+  /* Desktop adjustments */
+  @media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero .button.primary {
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
+    }
+  }
+/* END HERO */
+
+
+
+/* What to expect */
+ /* Container styling */
+#what-to-expect .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  max-width: 1200px; /* Adjust to fill more space */
+  margin: auto;
+}
+
+/* Content wrapper for text and image */
+#what-to-expect .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Text content styling */
+#what-to-expect .text-content {
+  max-width: 100%; /* Allow text to fill more space */
+  margin-bottom: 1em;
+}
+
+/* Image content styling */
+#what-to-expect .image-content img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Desktop layout adjustments */
+@media (min-width: 768px) {
+  #what-to-expect .container {
+    text-align: left;
+  }
+
+  #what-to-expect .content-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #what-to-expect .text-content {
+    flex: 2;
+    margin-right: 1em;
+    max-width: 70%; /* Adjust to fill more space */
+  }
+
+  #what-to-expect .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #what-to-expect .image-content img {
+    width: 100%;
+    max-width: 500px; /* Increased max-width for larger image */
+    border-radius: 8px;
+  }
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Space between images */
+}
+
+.gallery img {
+  max-width: calc(33.333% - 20px); /* Make images take up a third of the container's width, adjusting for margins */
+  height: auto;
+  flex: 1 1 calc(33.333% - 20px); /* Flex properties to allow wrapping and proper sizing */
+  object-fit: cover;
+  margin: 10px; /* Margin around each image */
+  border: 2px solid #ddd; /* Optional: adds a border around images */
+  border-radius: 8px; /* Optional: rounds the corners of images */
+}
+
+/* Adjust the image size for medium screens */
+@media (max-width: 768px) {
+  .gallery img {
+    max-width: calc(50% - 20px); /* Make images take up half of the container's width */
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Adjust the image size for smaller screens */
+@media (max-width: 480px) {
+  .gallery img {
+    max-width: calc(100% - 20px); /* Make images take up the full width of the container */
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+
+
+
+
+
+/* END What to expect */
+
+
+/* Trip cards */
+.trip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.trip h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.trip p {
+  text-align: center;
+}
+
+.trip article {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.trip article img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.trip article h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.trip article p {
+  margin: 0.5rem 0;
+}
+
+.trip article a.secondary {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.trip article:hover {
+  transform: translateY(-5px);
+}
+
+/* END Trip cards */
+
+/* Contact Form*/
+      .contact-form {
+        margin-top: 20px;
+        background-color: #ffffff; /* Dark background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: #001014; /* Light text color for contrast */
+      }
+
+      .contact-form h2 {
+        color: #00181f; /* Light color for the heading */
+      }
+
+      .contact-form label {
+        color: #000c14; /* Slightly darker than the input text for differentiation */
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        background-color: #dee4e9; /* Dark background for inputs */
+        color: #0d0d0e; /* Light text color for contrast */
+        border: 1px solid #7f8c8d; /* Subtle border */
+      }
+
+      .contact-form button {
+        background-color: #2581b9; /* Button color */
+        color: #ecf0f1; /* Light text color for contrast */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #3498db; /* Lighter button color on hover */
+      }
+/* END Contact Form*/
+
+/* FAQ */
+      .faq {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .faq h2 {
+        text-align: center;
+        color: #000000;
+        margin-bottom: 1.5rem;
+        font-family: 'Merriweather', serif;
+      }
+
+      .faq details {
+        margin-bottom: 1rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #ffffff;
+        transition: border 0.3s ease;
+      }
+
+      .faq summary {
+        font-size: 1.25rem;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        position: relative;
+        padding-right: 1.5rem;
+      }
+
+      /* Override Pico CSS for FAQ Summary Color */
+      .faq summary:not([role]) {
+        color: #111111;
+      }
+
+      .faq summary:hover:not([role]) {
+        color: #002244;
+      }
+
+      .faq p {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #000000;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .faq details:hover {
+        border-color: #949494;
+      }
+
+/* END FAQ */
+
+
