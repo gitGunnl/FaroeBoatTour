@@ -3996,7 +3996,36 @@ a.card-link * {
     padding: 10px 0; /* Optional: Adds padding for better spacing */
 }
 
-
-
-
+/* Add margin to the top of the box section */
+.move-down {
+    margin-top: 100px; /* Adjust this value as needed */
+}
   
+/* Style for the cards */
+.box.special {
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect to expand the cards */
+.box.special:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+}
+
+/* Ensure the transition effect applies to all cards */
+.card-link .box.special {
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for links to expand the cards */
+.card-link .box.special:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card */
+}
+
+#trips .box.special p {
+    color: #0c0000; /* Black color for the text */
+}
+
+.about.trip .image img {
+    max-width: 50%;
+}
+
