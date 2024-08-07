@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.faroeboattour.com/</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About Our Trips Page -->
+  <url>
+    <loc>https://www.faroeboattour.com/abouttrips.html</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Individual Trip Pages -->
+  <url>
+    <loc>https://www.faroeboattour.com/abouttrips.html#trip1</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.faroeboattour.com/abouttrips.html#trip2</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.faroeboattour.com/abouttrips.html#trip3</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.faroeboattour.com/abouttrips.html#trip4</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.faroeboattour.com/index.html#contact</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://www.faroeboattour.com/index.html#faq</loc>
+    <lastmod>2024-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+</urlset>
